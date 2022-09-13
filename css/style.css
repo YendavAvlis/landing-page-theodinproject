@@ -12,19 +12,39 @@ body {
     align-items: center;
 }
 
-.hero, .footer {
+.header, .footer {
     width: 1200px;
     background-color: #1f2937;
     color: #fff;
 }
 
+.header-container,
+.content-container,
+.main-content-container,
+.about-container,
+.testimonial-container,
+.call-action-container,
+.footer-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.header-container {
+    background-color: #1f2937;
+}
+
+.content-container {
+    background-image: url("../images/hero.jpg");
+    background-size:auto
+}
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 75px;
-    padding: 0 20px;
+    padding: 0 64px;
 }
 
 .logo {
@@ -46,6 +66,8 @@ a {
 }
 
 .content {
+    color: #f9faf8;
+    width: 1200px;
     display: flex;
     height: 500px;
     background-image: url("../images/hero.jpg");
@@ -54,7 +76,7 @@ a {
 
 .welcome-text {
    align-self: center;
-    padding: 20px;
+    padding: 64px;
     font-size: 18px;
     width: 50%;
 }
@@ -97,12 +119,16 @@ button:hover {
     
 }
 
+.about-container {
+    background-color: #f9faf8;
+}
+
 #about{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 1200px;
-    padding: 64px 20px;
+    padding: 64px;
     background-color: #f9faf8;
 }
 
@@ -115,7 +141,7 @@ button:hover {
 .images {
     display: flex;
     width: 1200px;
-    padding: 0 20px;
+    padding: 0 64px;
     text-align: center;
 }
 
@@ -127,6 +153,7 @@ button:hover {
     flex-direction: column;
     align-items: center;
     margin: 10px;
+    flex: 1;
 }
 
 .images div p {
@@ -141,10 +168,17 @@ img{
     border: 2px solid #3882f6;
 }
 
+.testimonial-container {
+    align-items: center;
+    flex-direction: column;
+    background-color: #e5e7eb;
+}
+
 .testimonial {
+    width: 1200px;
     display: flex;
     flex-direction: column;
-    padding: 64px 20px;
+    padding: 64px;
     background-color: #e5e7eb;
 }
 
@@ -157,6 +191,10 @@ img{
 
 .testimonial h3 {
     align-self: flex-end;
+}
+
+.call-action-container {
+    background-color: #f9faf8;
 }
 
 .call-action {
@@ -180,6 +218,10 @@ img{
 .card-button button{
     border: 1px solid #f9faf8;
     padding: 10px 20px;
+}
+
+.footer-container {
+    background-color: #1f2937;
 }
 
 .footer {
